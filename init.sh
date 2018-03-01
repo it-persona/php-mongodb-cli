@@ -8,7 +8,7 @@ docker-compose exec mongo sh /mongo.sh user password
 
 # Execute workspace
 # -----------------
-docker-compose exec workspace bash
+docker-compose exec workspace php cli.php
 
 # Execute specified containers
 # ----------------------------
