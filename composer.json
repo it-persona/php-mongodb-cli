@@ -1,0 +1,32 @@
+{
+    "name": "it-persona/php-mongodb-cli",
+    "description": "CLI PHP Client for MongoDB",
+    "license": "Open Source",
+    "authors": [
+        {
+            "name": "Vadym Panchenko",
+            "email": "panchenko.vadym@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "mongodb/mongodb": "^1.0.0",
+        "rappasoft/laravel-helpers": "dev-master",
+        "symfony/console": "3.4.x-dev",
+        "vlucas/phpdotenv": "^2.5@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests"
+        }
+    }
+}
