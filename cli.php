@@ -33,7 +33,7 @@ $application->setCommandLoader($commandLoader);
 try {
     $application->run($input);
 } catch (\Exception $exception) {
-    echo "Application error";
+    echo "Application error: \r\n $exception \r\n";
     exit(1);
 }
 

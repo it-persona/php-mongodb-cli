@@ -26,7 +26,7 @@ class Connection
     private $db;
 
     /**
-     * Connect constructor.
+     * Connection constructor.
      */
     public function __construct()
     {
@@ -35,12 +35,12 @@ class Connection
         $this->connect();
     }
 
-    private function connect()
+    public function connect()
     {
         try {
             $this->connection = new Client($this->uri);
         } catch (\Exception $exception) {
-            echo "Error connection to database";
+            echo "Error connection to database \n\r $exception \n\r";
             exit(1);
         }
     }
@@ -76,7 +76,8 @@ class Connection
     /**
      * @param $collectionName
      * @param null $dbName
-     * @return null
+     * @return \MongoCollection|null
+     * @throws \Exception
      */
     public function getCollection($collectionName, $dbName = null)
     {

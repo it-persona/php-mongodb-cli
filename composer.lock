@@ -4,38 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b94fbf04d289944437ee143d6781bec",
-    "content-hash": "84958a979abdb37502f4e93d5f8eaffa",
+    "content-hash": "a0ffb48c7643b6ad98033999fd9090ca",
     "packages": [
         {
             "name": "mongodb/mongodb",
-            "version": "dev-master",
+            "version": "v1.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
-                "reference": "e1ea8c7367c111bca83adebc9fcdce1882559982"
+                "reference": "6bb17a734f1d9380b9999dbca282acce393d09a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/e1ea8c7367c111bca83adebc9fcdce1882559982",
-                "reference": "e1ea8c7367c111bca83adebc9fcdce1882559982",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/6bb17a734f1d9380b9999dbca282acce393d09a8",
+                "reference": "6bb17a734f1d9380b9999dbca282acce393d09a8",
                 "shasum": ""
             },
             "require": {
                 "ext-hash": "*",
                 "ext-json": "*",
-                "ext-mongodb": "^1.4.0",
+                "ext-mongodb": "^1.3.0",
                 "php": ">=5.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^6.4"
+                "phpunit/phpunit": "^4.8"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "MongoDB\\": "src/"
@@ -54,12 +48,12 @@
                     "email": "jmikola@gmail.com"
                 },
                 {
-                    "name": "Derick Rethans",
-                    "email": "github@derickrethans.nl"
+                    "name": "Hannes Magnusson",
+                    "email": "bjori@mongodb.com"
                 },
                 {
-                    "name": "Katherine Walker",
-                    "email": "katherine.walker@mongodb.com"
+                    "name": "Derick Rethans",
+                    "email": "github@derickrethans.nl"
                 }
             ],
             "description": "MongoDB driver library",
@@ -70,7 +64,7 @@
                 "mongodb",
                 "persistence"
             ],
-            "time": "2018-02-27 21:27:24"
+            "time": "2017-11-28 18:31:21"
         },
         {
             "name": "psr/log",
@@ -392,6 +386,55 @@
                 "environment"
             ],
             "time": "2018-01-28 23:08:18"
+        },
+        {
+            "name": "zumba/mongounit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zumba/mongounit.git",
+                "reference": "378499a633290f7e58a4f8580fa0cacc9b1f5602"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zumba/mongounit/zipball/378499a633290f7e58a4f8580fa0cacc9b1f5602",
+                "reference": "378499a633290f7e58a4f8580fa0cacc9b1f5602",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mongodb": "*",
+                "mongodb/mongodb": ">=1.1.1 <1.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zumba\\PHPUnit\\Extensions\\Mongo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Saylor",
+                    "email": "christopher.saylor@zumba.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHPUnit extension that supports mongodb",
+            "homepage": "https://github.com/zumba/mongounit",
+            "keywords": [
+                "database",
+                "mongoclient",
+                "mongodb",
+                "testing"
+            ],
+            "time": "2018-01-05 00:44:52"
         }
     ],
     "packages-dev": [
@@ -492,7 +535,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-10-19 19:58:43"
+            "time": "2017-10-19T19:58:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -546,7 +589,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-09-11 18:02:19"
+            "time": "2017-09-11T18:02:19+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -597,7 +640,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-11-30 07:14:17"
+            "time": "2017-11-30T07:14:17+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -644,7 +687,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-07-14 14:27:02"
+            "time": "2017-07-14T14:27:02+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -858,7 +901,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21 13:50:34"
+            "time": "2015-06-21T13:50:34+00:00"
         },
         {
             "name": "phpunit/php-timer",
@@ -960,16 +1003,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.5.x-dev",
+            "version": "5.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "383f58edbd29fe4c5a601efee830e35ab69952b8"
+                "reference": "4ddb822f1de421b4cadb47570a525fd7d9359493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/383f58edbd29fe4c5a601efee830e35ab69952b8",
-                "reference": "383f58edbd29fe4c5a601efee830e35ab69952b8",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4ddb822f1de421b4cadb47570a525fd7d9359493",
+                "reference": "4ddb822f1de421b4cadb47570a525fd7d9359493",
                 "shasum": ""
             },
             "require": {
@@ -981,12 +1024,12 @@
                 "myclabs/deep-copy": "~1.3",
                 "php": "^5.6 || ^7.0",
                 "phpspec/prophecy": "^1.3.1",
-                "phpunit/php-code-coverage": "^4.0.4",
+                "phpunit/php-code-coverage": "^4.0.1",
                 "phpunit/php-file-iterator": "~1.4",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-timer": "^1.0.6",
                 "phpunit/phpunit-mock-objects": "^3.2",
-                "sebastian/comparator": "~1.2.2",
+                "sebastian/comparator": "~1.1",
                 "sebastian/diff": "~1.2",
                 "sebastian/environment": "^1.3 || ^2.0",
                 "sebastian/exporter": "~1.2",
@@ -997,13 +1040,14 @@
                 "symfony/yaml": "~2.1|~3.0"
             },
             "conflict": {
-                "phpdocumentor/reflection-docblock": "3.0.2"
+                "phpdocumentor/reflection-docblock": "3.0.2",
+                "sebastian/object-enumerator": "1.0.1",
+                "sebastian/recursion-context": "1.0.3 || 1.0.4"
             },
             "require-dev": {
                 "ext-pdo": "*"
             },
             "suggest": {
-                "ext-tidy": "*",
                 "ext-xdebug": "*",
                 "phpunit/php-invoker": "~1.1"
             },
@@ -1013,7 +1057,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.5.x-dev"
+                    "dev-master": "5.6.x-dev"
                 }
             },
             "autoload": {
@@ -1039,7 +1083,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-02-02 11:34:02"
+            "time": "2016-11-18T09:50:51+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1611,7 +1655,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2016-10-03 07:35:21"
+            "time": "2016-10-03T07:35:21+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1727,7 +1771,8 @@
     "stability-flags": {
         "rappasoft/laravel-helpers": 20,
         "symfony/console": 20,
-        "vlucas/phpdotenv": 20
+        "vlucas/phpdotenv": 20,
+        "zumba/mongounit": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
