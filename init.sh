@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-# Create default .ENV config
-# --------------------------
-#cp .env_example .env
+# Create .ENV config if not exist
+# -------------------------------
+if [ ! -f ".env" ]
+then
+    echo "$0: Create .env from example file..." && cp .env_example .env
+fi
 
 # Start
 # -----
@@ -17,7 +20,7 @@ docker-compose exec mongo sh /mongo.sh user password
 # Execute workspace with install dependencies & run CLI
 # -----------------------------------------------------
 composer install
-docker-compose exec workspace phpunit && php cli.php
+docker-compose exec workspace sh phpunit
 
 # Execute specified containers
 # ----------------------------
