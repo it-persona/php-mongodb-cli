@@ -30,7 +30,8 @@ class ConnectionTest extends TestCase
 
     public function testGetCollections()
     {
-        $this->assertNotNull(self::$connection->getCollections());
+        $collections = self::$connection->getCollections();
+        $this->assertNotNull($collections);
     }
 
 }
