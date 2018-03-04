@@ -19,8 +19,8 @@ docker-compose exec mongo sh /mongo.sh user password
 
 # Execute workspace with install dependencies & run CLI
 # -----------------------------------------------------
-composer install
-docker-compose exec workspace sh phpunit
+composer install && phpunit
+docker-compose exec workspace php cli.php
 
 # Execute specified containers
 # ----------------------------
