@@ -19,4 +19,4 @@ before_install:
   - docker-compose --version
 
 script:
-  - sh init.sh
+  - sh init4ci.sh
