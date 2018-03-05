@@ -1,6 +1,8 @@
 MongoDB Client (CLI)
 ====================
 
+![Build status](https://travis-ci.org/it-persona/php-mongodb-cli.svg?branch=master)
+
 PHP MongoDB Client is a CLI-script represent alternative syntax like MySQL for run queries and get data from MongoDB server.
 
 ### Docker containers
