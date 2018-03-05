@@ -1,6 +1,6 @@
 {
     "name": "it-persona/php-mongodb-cli",
-    "description": "CLI PHP Client for MongoDB",
+    "description": "MongoDB PHP Client (CLI)",
     "license": "Open Source",
     "authors": [
         {
@@ -22,6 +22,6 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^6"
+        "phpunit/phpunit": "^6.5"
     }
 }
