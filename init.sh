@@ -2,10 +2,10 @@
 
 # Create .ENV config if not exist
 # -------------------------------
-if [ ! -f ".env" ]
-then
-    echo "$0: Create .env from example file..." && cp .env_example .env
-fi
+#if [ ! -f ".env" ]
+#then
+#    echo "$0: Create .env from example file..." && cp .env_example .env
+#fi
 
 # Start
 # -----
@@ -15,12 +15,15 @@ chmod +x ip.sh
 docker-compose build apache2 mongo php-fpm workspace
 docker-compose up -d apache2 mongo
 
-docker-compose exec mongo sh /mongo.sh user password
+#docker-compose exec mongo sh /mongo.sh user password
 
-# Execute workspace with install dependencies & run CLI
-# -----------------------------------------------------
-composer install && phpunit
-docker-compose exec workspace php cli.php
+# Install packages
+# ----------------
+docker-compose exec workspace sh /composer_install.sh
+
+# Execute workspace & run MongoDB PHP Client (CLI)
+# ------------------------------------------------
+docker-compose exec workspace
 
 # Execute specified containers
 # ----------------------------

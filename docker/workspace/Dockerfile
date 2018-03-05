@@ -91,6 +91,9 @@ RUN groupadd -g $PGID laradock && \
 # Add the composer.json
 COPY ./composer.json /home/laradock/.composer/composer.json
 
+# Add shell script for composer install
+COPY ./composer_install.sh /composer_install.sh
+
 # Make sure that ~/.composer belongs to laradock
 RUN chown -R laradock:laradock /home/laradock/.composer
 USER laradock
