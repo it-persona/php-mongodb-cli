@@ -23,4 +23,4 @@ docker-compose exec workspace sh /composer_install.sh
 
 # Execute workspace & run unit tests
 # ----------------------------------
-docker-compose exec workspace sh /run_tests.sh
+docker-compose exec workspace php -dzend_extension=xdebug.so /var/www/vendor/bin/phpunit

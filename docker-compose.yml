@@ -16,7 +16,7 @@ services:
         volumes_from:
             - volumes_source
         extra_hosts:
-            - "{{ base_url }}:{{ host_ip }}"
+            - "mongocli:192.168.0.102"
         tty: true
 
 ### PHP-FPM Container #######################################
@@ -35,7 +35,7 @@ services:
         links:
             - workspace
         extra_hosts:
-            - "{{ base_url }}:{{ host_ip }}"
+            - "mongocli:192.168.0.102"
         environment:
             # IMPORTANT: Set the Remote Interpreter entry matching name to `laravel`
             - PHP_IDE_CONFIG="serverName=laravel"
