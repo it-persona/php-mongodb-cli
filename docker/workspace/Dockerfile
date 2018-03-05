@@ -94,6 +94,9 @@ COPY ./composer.json /home/laradock/.composer/composer.json
 # Add shell script for composer install
 COPY ./composer_install.sh /composer_install.sh
 
+# Add shell script run PHP Unit tests
+COPY ./run_tests.sh /run_tests.sh
+
 # Make sure that ~/.composer belongs to laradock
 RUN chown -R laradock:laradock /home/laradock/.composer
 USER laradock
